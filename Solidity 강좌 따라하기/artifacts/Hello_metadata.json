@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "hi",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity 강좌 따라하기/ex1_HelloWorld.sol": "Hello"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity 강좌 따라하기/ex1_HelloWorld.sol": {
+			"keccak256": "0x1998defa235016de80c18bb3020f38e79deaa4fecfdd7707f239bf713ba15531",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fd3e958dffcc470aa753a16a5786894a2c4e797b64ad9058cc69ba4a03346162",
+				"dweb:/ipfs/QmdhYimXfNnnBHwPH2WnW1vAH5zgp5UxvVxLWh1P8pQBD5"
+			]
+		}
+	},
+	"version": 1
+}

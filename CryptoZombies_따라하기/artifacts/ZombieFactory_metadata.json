@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "dnaDigits",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dnaModulus",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CryptoZombies_따라하기/Lesson 1.sol": "ZombieFactory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CryptoZombies_따라하기/Lesson 1.sol": {
+			"keccak256": "0x152082be16c4e6146e8d6ef3dabd5f7673838e74d9848c4d963380eea4ebcccc",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://812cfae3e5ff257e11e5b48f96a38d4fda349d7c34b597db36cfa311478d010e",
+				"dweb:/ipfs/QmS9mqdKwLgRGQiEJAr22xeJ2WZ913iSkV8AB6cdMtctvL"
+			]
+		}
+	},
+	"version": 1
+}
