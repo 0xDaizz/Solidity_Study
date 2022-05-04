@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "changeA1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity 강좌 따라하기/ex4_Functions.sol": "Lec4"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity 강좌 따라하기/ex4_Functions.sol": {
+			"keccak256": "0x2a20e1223ced8734ed9f7f08fdf50d1d50f9662dc00cfe4bfa20aa2983697e8d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1979c6843804728698a2dae7603222521514fb6538e97046f255de60ced1f56f",
+				"dweb:/ipfs/QmWN6thYJoKzF29FxR2GwXgM52ucqtK8rkCXgasCiuL3cu"
+			]
+		}
+	},
+	"version": 1
+}

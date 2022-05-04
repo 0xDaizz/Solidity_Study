@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "gasss1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gasss2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gasss3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity 강좌 따라하기/ex3_Gas_and_Ether.sol": "Lec3"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity 강좌 따라하기/ex3_Gas_and_Ether.sol": {
+			"keccak256": "0x5667299c379e0dc5c5f237dd8e2c286b83ad7d7467dea7a2dad1a74f03a60ea3",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0fd5bfb842056f56f1eb9a42e1731bddd92bc657b3f47ed7509f34ac8f4a4cb3",
+				"dweb:/ipfs/QmecjojYxS2R5JaUtwFh8ACiM2armrmPSvbB7cRqf5KZoy"
+			]
+		}
+	},
+	"version": 1
+}

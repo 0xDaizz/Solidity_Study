@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "changeA1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "changeA2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity 강좌 따라하기\\ex4_Functions.sol": "Lec4"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity 강좌 따라하기\\ex4_Functions.sol": {
+			"keccak256": "0x650fb448831573e58c38fa4ddf6240ffffa3bb85c5fc00f2ac8a2f176b873c3e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8061b25fbf150f5c16552d61526236846c5e4c731d160869bb68e7ce3a34f3e5",
+				"dweb:/ipfs/QmQ67PSFbMWn4DQNyaFVsJU1UFY7NFpTc1vH6S38j4XRip"
+			]
+		}
+	},
+	"version": 1
+}
