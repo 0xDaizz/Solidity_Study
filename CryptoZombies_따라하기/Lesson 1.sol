@@ -34,7 +34,7 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
     // Chap 6. 배열 : 정적배열 = 안에 들어있는 개수가 고정된 배열, 동적배열 = 개수가 고정되지 않은 배열.
     // uint[2] fixedArray; -> fixedArray라는 배열을 만들 건데, 그 안에 들어갈 자료는 2개가 가능하고, 그 자료형은 uint임!
 
-    function _createZombie(string storage _name, uint _dna) private {   // Chap 9. public/private : private로 함수를 선언할 때에는 함수 명 앞에 _처리를 해주는 게 관례!! -- Storage 안쓰면 오류나길래..추가
+    function _createZombie(string memory _name, uint _dna) private {   // Chap 9. public/private : private로 함수를 선언할 때에는 함수 명 앞에 _처리를 해주는 게 관례!! -- Storage 안쓰면 오류나길래..추가
 
         // Chap 7. 함수 만들기. 
         // 괄호 안에는 변수 들어가는 건데, 마치 f(x, y) 처럼 말이다. 
@@ -49,9 +49,29 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
 
 
         // Chap 13-2. 이벤트를 실행!
-        uint id = zombies.push(Zombie(_name, _dna)) - 1;
+        
+        //uint id = zombies.push(Zombie(_name, _dna)) -1;
         // 아래의 이벤트 실행을 위해서는 id가 필요한데, 위의 zombies 배열 중 가장 마지막에 추가된 좀비를 가져와야 하므로, 
         // 인덱스 -1을 이용해 가장 나중에 추가된 좀비를 불러오는 것.
+
+        /* push의 행동이 Solidity 0.6 이후로 변경되었다고 함.
+        
+        원래 크립토좀비에서는, 새로운 좀비를 생성 - Zombies 배열에 추가 이 두 가지 과정이었음
+
+        Zombie abcd = Zombie(_name, _dna);
+        zombies.push(abcd);
+
+        이걸 합친게 저기 52번째 줄 가운데 있는 zombies.push(Zombie(_name, _dna)); 이거다.
+
+        이제는 이벤트 실행하기 위해 id를 정의할 때, 두 번 나눠서 다른 식으로 해줘야하는듯
+
+        */
+
+        zombies.push(Zombie(_name, _dna));
+        uint id = zombies.length - 1;
+        //이렇게!
+
+
 
         NewZombie(id, _name, _dna);
         //이벤트 실행!
@@ -59,7 +79,7 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
 
     }
 
-    function _generateRandomDna(string storage _str) private view returns (uint) {  //함수명과 () 붙여주고, returns와 ()는 띄어줌
+    function _generateRandomDna(string memory _str) private view returns (uint) { 
         // Chap 10. 반환값, View와 Pure : 
         // 함수 바깥의 변수를 보지만 변경하진 않을 것이므로 view
         // uint 자료형의 값을 내놓아야 할 것이므로 returns(uint)를 써 줌. (나중에 너 uint형태의 값 내놓아야 돼! 라고 미리 알려주는 느낌.)
@@ -81,7 +101,7 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
         왜 return 뒤에 괄호를 안 치는지 모르겠네...*/
     }
 
-    function createRandomZombie(string _name) public {
+    function createRandomZombie(string memory _name) public {
         uint randDna = _generateRandomDna(_name);
         _createZombie(_name, randDna);
     }
