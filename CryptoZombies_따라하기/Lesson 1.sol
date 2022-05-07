@@ -73,9 +73,10 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
 
 
 
-        NewZombie(id, _name, _dna);
+        emit NewZombie(id, _name, _dna);
         //이벤트 실행!
 
+        //Emit을 붙여줘야함!
 
     }
 
@@ -84,14 +85,25 @@ contract ZombieFactory {                // Chap 2. ZombieFactory라는 컨트랙
         // 함수 바깥의 변수를 보지만 변경하진 않을 것이므로 view
         // uint 자료형의 값을 내놓아야 할 것이므로 returns(uint)를 써 줌. (나중에 너 uint형태의 값 내놓아야 돼! 라고 미리 알려주는 느낌.)
 
-        uint rand = uint(keccak256(_str));
+
+
+        // keccak256는 bytes를 취한다. uint나 string은 취할 수 없음
+
+        // 따라서 string 자료형인 _str을 bytes로 먼저 바꿔줘야함
+
+        
+
+        uint rand = uint(keccak256(abi.encodePacked(_str)));
+
+
+
 
         return rand % dnaModulus;
 
         /*  Chap 11. Keccak256과 형 변환
         keccak256은 해시함수의 일종. string을 256비트인 16진수로 변환
         
-        그리고 자료형의 변환을 하려면 50줄처럼 하면 된다. 
+        그리고 자료형의 변환을 하려면 96줄처럼 하면 된다. 
         keccak256(_str)은 16진수 숫자이기 때문에, uint 자료형의 rand 변수에 저장되기 위해서는 
         uint(keccak256(_str)) 이런식으로 하면 된다. 
 
